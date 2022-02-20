@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="container-goals">
+        <div class="goals-header">
+          <h2>Our goals</h2>
+          <button class="goals-add" type="button" onclick="showInput()">
+            Add new
+          </button>
+          <input type="text" class="goals-input hidden" />
+          <button
+            type="button"
+            class="goals-confirm hidden"
+            onclick="insertButton()"
+          >
+            Confirm
+          </button>
+          <hr class="title-line" />
+        </div>
+
+        <div class="goals-todo">
+          <!-- Dynamic to-do -->
+
+          <!-- todo end-->
+        </div>
+      </div>
+
+      <div class="container-completed">
+        <div class="completed-header">
+          <h2>Completed</h2>
+          <button class="completed-hide" onclick="hideOrShow()">Hide</button>
+          <hr class="title-line" />
+        </div>
+
+        <div class="goals-todo completed">
+          <!-- to-do completed dynamic-->
+
+          <!-- to-do completed dynamic end-->
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
